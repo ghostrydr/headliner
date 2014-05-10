@@ -1,7 +1,7 @@
 # jquery.headliner.js
 
 ## What it does
-Scales text to fit it's parents elements width.
+Scales up text to fit it's parents elements width.
 
 WARNING: Will not work on blocks of text (e.g. paragraphs)
 
