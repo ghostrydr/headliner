@@ -1,9 +1,9 @@
 # jquery.headliner.js
 
 ## What it does
-Scales up text to fit it's parents elements width.
+Scales text to fit it's parent elements width.
 
-WARNING: Will not work on blocks of text (e.g. paragraphs)
+WARNING: Not for use on blocks of text (e.g. paragraphs) or text that wraps
 
 ## Usage
 
@@ -14,7 +14,7 @@ WARNING: Will not work on blocks of text (e.g. paragraphs)
 
 Call plugin
 ``` javascript
-$("#element").headliner();
+$("#element").headliner([options]);
 ```
 
 
@@ -26,3 +26,5 @@ $("#element").headliner();
   animate: false                              // animates resizing of font
 };
 ```
+
+CAVEAT: Results can be a little flakey if custom fonts are used.

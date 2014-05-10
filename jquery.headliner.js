@@ -1,5 +1,5 @@
 /*
-* Headliner.js 0.1.1
+* Headliner.js 0.1.2
 *
 * Copyright 2014, Russell Wilson romeo-whiskey.com
 * Released under the WTFPL license
@@ -20,7 +20,7 @@
         return this.each(function () {
 
             var container = $(this),
-                font_size = parseInt(container.css("font-size"), 10),
+                font_size = 0,
                 font_unit = "px",
                 parent = $(this).parent(),
                 max_width = parent.innerWidth() - parseInt(parent.css("padding-left"), 10) - parseInt(parent.css("padding-right"), 10),
@@ -32,8 +32,8 @@
 
             settings.initial = parseInt(container.css("font-size"), 10);
 
-            // Make sure we have text in there and that the text needs to be scaled
-            if (container.text() === "" || max_width <= container.width()) {
+            // Make sure we have text in there
+            if (container.text() === "") {
                 return;
             }
 
